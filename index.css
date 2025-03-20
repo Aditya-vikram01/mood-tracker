@@ -1,0 +1,79 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+ 
+  nav h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  main p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .select-container {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+  }
+  
+  select:focus {
+    border-color: #4caf50;
+  }
+
+  .timeframe-container {
+    margin: 20px 0;
+  }
+
+  #chart-container {
+    margin-top: 20px;
+  }
+  
+  canvas {
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+ 
+  @media (max-width: 500px) {
+    .container {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    select {
+      width: 100%;
+    }
+  }
+  

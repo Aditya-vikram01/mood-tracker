@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Tracker</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h1>Your Personal Mood Tracker</h1>
+      </nav>
+      <main>
+        <p>How are you feeling right now?</p>
+        <div class="select-container">
+          <label for="mood-select">Mood:</label>
+          <select name="moods" id="mood-select">
+            <option value="" disabled hidden >Select your mood</option>
+            <option value="happy">😁 Happy</option>
+            <option value="sad">😔 Sad</option>
+            <option value="neutral">😑 Neutral</option>
+            <option value="excited">😃 Excited</option>
+          </select>
+        </div>
+
+        <!-- Timeframe selection -->
+        <div class="timeframe-container">
+          <p>Select Timeframe:</p>
+          <select id="timeframe-select">
+            <option value="day">📅 Day</option>
+            <option value="week">🗓️ Week</option>
+            <option value="month">📆 Month</option>
+            <option value="year">📅 Year</option>
+          </select>
+        </div>
+      </main>
+
+      <!-- Chart Container -->
+      <div id="chart-container">
+        <p>Timeline of past moods (Day/Week/Month/Year)</p>
+        <canvas id="mood-chart" width="500" height="400"></canvas>
+      </div>
+    </div>
+
+    <!-- Include Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Include JS File -->
+    <script src="index.js"></script>
+  </body>
+</html>
