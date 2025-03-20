@@ -17,3 +17,6 @@ This project is deployed on **Vercel**.
 │── index.css # Stylesheet
 │── index.js # JavaScript file
 │── mood-icon.png # Favicon image
+
+
+![Screenshot 2025-03-20 222445](https://github.com/user-attachments/assets/daea4790-b65e-421f-a28e-8f4e60e78dbc)
